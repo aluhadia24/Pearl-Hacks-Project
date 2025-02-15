@@ -3,8 +3,13 @@
     src: url(PixelifySans-VariableFont_wght.ttf)
 }
 
+ul {
+    text-align: center;
+}
+
 body {
     background-color: #7BAFD4;
+    color: #A9D1E8;
     font-family:pixelated;
     }
 
@@ -13,6 +18,7 @@ header {
     color: #A9D1E8;
     text-align: left;
     margin-top: 15px;
+    display: inline-block;
     font-family:pixelated;
     font-size: 25px;
     padding: 5px;
@@ -23,17 +29,22 @@ section {
     color: #1E3A5F;
     text-align: center;
     margin-top: 15px;
+    display: inline-block;
     font-family:pixelated;
     font-size: 25px;
     padding: 5px;
 }
 
-
+label {
+    font-size: 18px;
+    padding: 15px 32px;
+}
 h1 {
     color: #1E3A5F;
     text-align: left;
     margin-top: 15px;
     font-family:pixelated;
+    display: inline-block;
     font-size: 25px;
 }
 
@@ -42,6 +53,7 @@ h2 {
     text-align: center;
     margin-top: 15px;
     font-family:pixelated;
+    display: inline-block;
     font-size: 25px;
 }
 
