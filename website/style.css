@@ -3,17 +3,22 @@ body {
         color: #9a5c38;
         text-align: center;
         margin-top: 80px;
+        font-family:pixelated;
     }
-button {
+@font-face {
+    font-family: pixelated;
+    src: url(PixelifySans-VariableFont_wght.ttf)
+}
+    button {
         background-color: #9a5c38;
         color: #ffd0cc;
-        font-size: 15px;
+        font-size: 18px;
         margin: 15px;
         border: none;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-family:Cabin sketch;
+        font-family:pixelated;
         border-radius:1em;
     }
