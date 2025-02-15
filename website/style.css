@@ -1,0 +1,19 @@
+body {
+    background-color: #ffd0cc;
+        color: #9a5c38;
+        text-align: center;
+        margin-top: 80px;
+    }
+button {
+        background-color: #9a5c38;
+        color: #ffd0cc;
+        font-size: 15px;
+        margin: 15px;
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family:Cabin sketch;
+        border-radius:1em;
+    }
