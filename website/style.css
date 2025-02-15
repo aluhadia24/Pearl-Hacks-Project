@@ -1,19 +1,62 @@
+@font-face {
+    font-family: pixelated;
+    src: url(PixelifySans-VariableFont_wght.ttf)
+}
+
+header {
+    background-color: #1E3A5F;
+    color: #7BAFD4;
+    text-align: left;
+    margin-top: 15px;
+    font-family:pixelated;
+    font-size: 25px;
+    padding: 5px;
+}
+
+section {
+    background-color: #1E3A5F;
+    color: #7BAFD4;
+    text-align: left;
+    margin-top: 15px;
+    font-family:pixelated;
+    font-size: 25px;
+    padding: 5px;
+}
 body {
-    background-color: #ffd0cc;
-        color: #9a5c38;
-        text-align: center;
-        margin-top: 80px;
+    background-color: #A9D1E8;
+    color: #1E3A5F;
+    text-align: center;
+    margin-top: 15px;
+    font-family:pixelated;
     }
+
+h1 {
+    color: #1E3A5F;
+    text-align: left;
+    margin-top: 15px;
+    font-family:pixelated;
+    font-size: 25px;
+}
+
+h2 {
+    color: #1E3A5F;
+    text-align: center;
+    margin-top: 15px;
+    font-family:pixelated;
+    font-size: 25px;
+}
+
+
 button {
-        background-color: #9a5c38;
-        color: #ffd0cc;
-        font-size: 15px;
-        margin: 15px;
-        border: none;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-family:Cabin sketch;
-        border-radius:1em;
-    }
+    background-color: #4A769E;
+    color: #A9D1E8;
+    font-size: 18px;
+    margin: 15px;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family:pixelated;
+    border-radius:1em;
+}
