@@ -95,8 +95,8 @@ plus_swipes_button.onclick = function(){
 } */
 
 document.getElementById("mealswipe_button").addEventListener("click", function () {
-		let meal_swipe = parseInt(localStorage.getItem("meal_swipe_count")) || 0;
-		if (meal_swipe > 0) {
+	let meal_swipe = parseInt(localStorage.getItem("meal_swipe_count")) || 0;
+	if (meal_swipe > 0) {
 			meal_swipe--;
 			localStorage.setItem("meal_swipe_count", meal_swipe);
 			document.getElementById("remainmeals").innerText = meal_swipe + " meal swipes";
