@@ -9,7 +9,9 @@ ul {
 }
 
 body {
-    background: #F8F9F9;
+    background-image: url(background.png);
+    background-size: 100%;
+    background-color: #F8F9F9;
     color: white;
     font-family:pixelated;
     padding: 0;
