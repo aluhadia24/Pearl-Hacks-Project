@@ -31,7 +31,7 @@ justify-content: center;
 
 body {
     min-height:100vh;
-    background-image: url(background.jpg);
+    background-image: url(background.png);
     background-color: #7BAFD4;
     background-size: cover;
     background-position: right;
@@ -79,7 +79,6 @@ form label{
     width: 50px;
     background-color: #4A769E;
     border-radius: 10px 0 0 10px;
-    fill: #FFFF; 
     display: flex;
     justify-content: center;
     align-items: center;
