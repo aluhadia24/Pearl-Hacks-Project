@@ -8,8 +8,8 @@ ul {
 }
 
 body {
-    background: white;
-    color: #1E3A5F;
+    background: #F8F9F9;
+    color: white;
     font-family:pixelated;
     padding: 0;
     margin: 0;
@@ -18,10 +18,20 @@ body {
 
 header {
     background: #1E3A5F;
+    color:#F8F9F9;
+    text-align: left;
+    display: block;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.subheader {
+    background: #94B7CD;
     text-align: left;
     display: block;
     font-size: 25px;
     padding: 20px;
+    border-radius: auto;
 }
 
 section {
@@ -33,6 +43,17 @@ section {
     font-size: 25px;
     padding: 5px;
     border-radius:1em;
+}
+
+.meallog {
+    background: #A9D1E8;
+    border-radius: 20px;
+}
+
+.remainmeals {
+    background: #A9D1E8;
+    border-radius: 20px;
+    color: #1E3A5F;
 }
 
 footer {
@@ -50,14 +71,17 @@ label {
     padding: 10px;
     flex-direction: row;
     margin: 10px 10px 10px 10px;
+    padding: 5px;
+    border-radius:1em;
+    width: 25%;
 }
 
 .vertrow {
-    background: #A9D1E8;
     display: flex;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
     flex-direction: column;
-    margin: auto;
+    height: 100px;
 }
 
 h1 {
@@ -73,10 +97,10 @@ h1 {
 h2 {
     color: #A9D1E8;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 5px;
     font-family:pixelated;
     display: inline-block;
-    font-size: 25px;
+    font-size: 18px;
     border-radius:1em;
 }
 
@@ -85,9 +109,9 @@ button {
     background-color: #4A769E;
     color: #A9D1E8;
     font-size: 18px;
-    margin: 15px;
+    margin: 0 15px;
     border: none;
-    padding: 15px 32px;
+    padding: 15px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

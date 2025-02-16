@@ -6,44 +6,49 @@
         <title> Meal Manager - Dashboard</title>
         <link rel="stylesheet" href="style.css">
         <script src="main.js" defer></script>
-        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     </head>
     <body>
         <header>
             <h1>Heel Meals</h1>
         </header>
         
-        <section>
-            <h1>Hi {{name}}!</h1>
-            <h2>Today is {{date}}</h2>
-        </section>
+        <div class="subheader">Hi {{name}}!</div>
+        <div class="subheader"><h2>Today is {{date}}</h2></div>
         
-        <section>
+        
+        
             <div class = "horizrow">
+                <div class ="meallog">
                 <div class = "vertrow">
-                    <h1>Log Meal</h1>
+                    <div class="subheader">Log Meal</div>
                 </div>
                 <div class = "vertrow">
-                    <button>normal</button>
+                    <button>Meal Swipe</button>
                 </div>
                 <div class = "vertrow">
-                    <button>normal</button>   
+                    <button>Plus Swipe</button>   
                 </div>
                 <div class = "vertrow"> 
-                    <button>normal</button>  
+                    <button>Flex $</button>  
                 </div> 
+            </div>
             </div>
 
             <div class = "horizrow">
                 <div class = "vertrow">
-                    <h1>normal</h1>
+                    <div class = "remainmeals">
+                    <h1>X Meals Swipes</h1>
+                    </div>
                 </div>
                 <div class = "vertrow">
-                    <h1>normal</h1>
+                    <div class = "remainmeals">
+                        <h1>X Plus Swipes</h1>
+                    </div>
                 </div>
                 <div class = "vertrow">
-                    <h1>normal</h1>
+                    <div class = "remainmeals">
+                        <h1>$X Flex</h1>
+                    </div>
                 </div>
             </div>
             
@@ -55,7 +60,7 @@
                     <h1>normal</h1>
                 </div>
             </div>
-        </section>
+        
         
         
         <footer></footer>
