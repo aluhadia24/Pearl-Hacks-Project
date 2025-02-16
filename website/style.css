@@ -8,37 +8,58 @@ ul {
 }
 
 body {
-    background-color: #7BAFD4;
-    color: #A9D1E8;
+    background: white;
+    color: #1E3A5F;
     font-family:pixelated;
+    padding: 0;
+    margin: 0;
+    text-align: center;
     }
 
 header {
-    background-color: #1E3A5F;
-    color: #A9D1E8;
+    background: #1E3A5F;
     text-align: left;
-    margin-top: 15px;
-    display: inline-block;
-    font-family:pixelated;
+    display: block;
     font-size: 25px;
-    padding: 5px;
+    padding: 20px;
 }
 
 section {
-    background-color: #A9D1E8;
+    background: #A9D1E8;
     color: #1E3A5F;
     text-align: center;
     margin-top: 15px;
     display: inline-block;
-    font-family:pixelated;
     font-size: 25px;
     padding: 5px;
+    border-radius:1em;
+}
+
+footer {
+    background: #1E3A5F;
 }
 
 label {
     font-size: 18px;
     padding: 15px 32px;
+    border-radius:1em;
 }
+
+.horizrow {
+    display: inline-block;
+    padding: 10px;
+    flex-direction: row;
+    margin: 10px 10px 10px 10px;
+}
+
+.vertrow {
+    background: #A9D1E8;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    margin: auto;
+}
+
 h1 {
     color: #1E3A5F;
     text-align: left;
@@ -46,6 +67,7 @@ h1 {
     font-family:pixelated;
     display: inline-block;
     font-size: 25px;
+    border-radius:1em;
 }
 
 h2 {
@@ -55,6 +77,7 @@ h2 {
     font-family:pixelated;
     display: inline-block;
     font-size: 25px;
+    border-radius:1em;
 }
 
 
