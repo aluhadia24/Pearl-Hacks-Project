@@ -5,6 +5,7 @@
 
 ul {
     text-align: center;
+    padding: 0;
 }
 
 body {
@@ -21,8 +22,9 @@ header {
     color:#F8F9F9;
     text-align: left;
     display: block;
-    font-size: 25px;
-    padding: 10px;
+    font-size: 30px;
+    padding: 15px;
+    font-family:pixelated;
 }
 
 .subheader {
@@ -34,7 +36,7 @@ header {
     border-radius: auto;
 }
 
-section {
+/*section {
     background: #A9D1E8;
     color: #1E3A5F;
     text-align: center;
@@ -44,49 +46,26 @@ section {
     padding: 5px;
     border-radius:1em;
 }
-
-.meallog {
-    background: #A9D1E8;
-    border-radius: 20px;
-}
-
-.remainmeals {
-    background: #A9D1E8;
-    border-radius: 20px;
-    color: #1E3A5F;
-}
-
+    */
 footer {
     background: #1E3A5F;
+    text-align: center;
+    color:#F8F9F9;
+    font-family:pixelated;
+    vertical-align: center;
+    padding: 0;
+    height: 50px;
 }
-
+    
 label {
     font-size: 18px;
     padding: 15px 32px;
     border-radius:1em;
 }
 
-.horizrow {
-    display: inline-block;
-    padding: 10px;
-    flex-direction: row;
-    margin: 10px 10px 10px 10px;
-    padding: 5px;
-    border-radius:1em;
-    width: 25%;
-}
-
-.vertrow {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
-    height: 100px;
-}
-
 h1 {
-    color: #1E3A5F;
-    text-align: left;
+    color: #F8F9F9;
+    text-align: center;
     margin-top: 15px;
     font-family:pixelated;
     display: inline-block;
@@ -104,10 +83,43 @@ h2 {
     border-radius:1em;
 }
 
+/* For dashboard */
+.meallog {
+    background: #A9D1E8;
+    border-radius: 20px;
+}
 
-button {
+.remainmeals {
+    background: #A9D1E8;
+    border-radius: 20px;
+    color: #1E3A5F;
+    padding: 10px ;
+    font-size: 25px;
+    
+}
+
+.horizrow {
+    display: inline-block;
+    padding: 10px;
+    flex-direction: row;
+    margin: 10px 10px 10px 10px;
+    padding: 5px;
+    border-radius:1em;
+    width: 25%;
+    vertical-align: top;    
+}
+
+.vertrow {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    height: 100px;
+}
+
+.dashbutton {
     background-color: #4A769E;
-    color: #A9D1E8;
+    color: #F8F9F9;
     font-size: 18px;
     margin: 0 15px;
     border: none;
@@ -117,4 +129,25 @@ button {
     display: inline-block;
     font-family:pixelated;
     border-radius:1em;
+}
+
+.daysleft {
+    background: #1E3A5F;
+    border-radius: 20px;
+    color: #A9D1E8;
+    padding: 10px ;
+}
+
+/* for survey */
+.question {
+    background: #94B7CD;
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px;
+    flex-direction: row;
+    margin: 10px 10px 10px 10px;
+    padding: 15px;
+    border-radius:15px;
+    width: 75%;
+    vertical-align: top;    
 }

@@ -10,43 +10,32 @@
         <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     </head>
     <body>
-        <header><h1>Meal Manager</h1></header>
+        <header>Meal Manager</header>
         
-        <!--<ul><section><h2>What meal plan do you have?</h2></section></ul>
-        
-        <ul>
-        <section>
-        <button id="200">Block 200</button>
-        <br>
-        <button id="160">Block 160</button>
-        <br>
-        <button id="120">Block 120</button>
-        <br>
-        <button id="100">Block 100 + $200 Flex</button>
-        </section>
-        </ul> -->
 
-        <ul>
-            <section><h2>How many meals do you have left?</h2></section>
+        
+            <div class = "question"><h1>How many meals do you have left?</h1>
             <ul>
-            <section>
                 <label for="mealswipes">Meal Swipes:</label><br>
                 <input type="number" id="mealswipes" name="mealswipes"><br>
                 <label for="plusswipes">Plus Swipes:</label><br>
                 <input type="number" id="plusswipes" name="plusswipes"><br>
-                <label for="flex">Flex Dollars:</label><br>
-                <input type="number" id="flex" name="flex"><br>
-            </section>
             </ul>
-            </ul>
+        </div>
+        <br>
         
+        <div class = "question"><h1>How many meals do you eat a day?</h1>
         <ul>
-        <section><h2>How many meals do you eat a day?</h2></section>
-        <ul>
-        <section>
             <input type="number">
-        </section>
         </ul>
-        </ul>
+    </div>
+
+    <br>
+    <button id = "calculate"><div class="dashbutton">Calculate!</div></button>
+    <br>
     </body>
+
+    <footer>
+        made with love at pearl hacks!
+    </footer>
 </html>
