@@ -1,131 +1,140 @@
+
+html{
+    font-family: pixelated;
+    font-size: 12pt;
+    color: #2E2B41;
+    text-align: center;
+}
+
+.wrapper{
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+box-sizing: border-box;
+background-color: #7BAFD4;
+height: 100vh;
+width: max(40%, 600px);
+padding: 10px;
+border-radius: 0 20px 20px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
 @font-face {
     font-family: pixelated;
     src: url(PixelifySans-VariableFont_wght.ttf)
 }
 
-ul {
-    text-align: center;
-    padding: 0;
-}
-
 body {
+    min-height:100vh;
     background-image: url(background.png);
-    background-size: 100%;
-    background-color: #F8F9F9;
-    color: white;
-    font-family:pixelated;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+    background-color: #7BAFD4;
+    background-size: cover;
+    background-position: right;
+    font-family: pixelated;
+    overflow: hidden;
     }
 
 header {
-    background: #1E3A5F;
-    color:#F8F9F9;
+    background-color: #1E3A5F;
+    color: #A9D1E8;
     text-align: left;
-    display: block;
-    font-size: 30px;
-    padding: 15px;
+    margin-top: 15px;
     font-family:pixelated;
-}
-
-.subheader {
-    background: #94B7CD;
-    text-align: left;
-    display: block;
     font-size: 25px;
-    padding: 20px;
-    border-radius: auto;
+    padding: 5px;
 }
 
-/*section {
-    background: #A9D1E8;
+section {
+    background-color: #A9D1E8;
     color: #1E3A5F;
     text-align: center;
     margin-top: 15px;
-    display: inline-block;
+    font-family:pixelated;
     font-size: 25px;
     padding: 5px;
-    border-radius:1em;
 }
-    */
-footer {
-    background: #1E3A5F;
-    text-align: center;
-    color:#F8F9F9;
-    font-family:pixelated;
-    vertical-align: center;
-    padding: 0;
+
+form{
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+form > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form label{
+    flex-shrink: 0;
     height: 50px;
+    width: 50px;
+    background-color: #4A769E;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
 }
-    
-label {
-    font-size: 18px;
-    padding: 15px 32px;
-    border-radius:1em;
+
+
+
+form input{
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background-color:#A9D1E8
+}
+
+form input:focus{
+    outline: none;
+    border-color: #2E2B41;
+}
+
+form input::placeholder{
+    color: #2E2B41;
+    opacity: 1;
 }
 
 h1 {
-    color: #F8F9F9;
-    text-align: center;
+    color: #1E3A5F;
+    text-align: left;
     margin-top: 15px;
-    font-family:pixelated;
-    display: inline-block;
-    font-size: 25px;
-    border-radius:1em;
+    font-weight: 900px;
+    font-family: pixelated;
+    font-size: 40px;
 }
 
 h2 {
     color: #A9D1E8;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 15px;
     font-family:pixelated;
-    display: inline-block;
-    font-size: 18px;
-    border-radius:1em;
-}
-
-/* For dashboard */
-.meallog {
-    background: #A9D1E8;
-    border-radius: 20px;
-}
-
-.remainmeals {
-    background: #A9D1E8;
-    border-radius: 20px;
-    color: #1E3A5F;
-    padding: 10px ;
     font-size: 25px;
-    
 }
 
-.horizrow {
-    display: inline-block;
-    padding: 10px;
-    flex-direction: row;
-    margin: 10px 10px 10px 10px;
-    padding: 5px;
-    border-radius:1em;
-    width: 25%;
-    vertical-align: top;    
-}
 
-.vertrow {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
-    height: 100px;
-}
-
-.dashbutton {
+button {
     background-color: #4A769E;
-    color: #F8F9F9;
+    color: #FFFF;
     font-size: 18px;
-    margin: 0 15px;
+    font-weight: 600;
+    margin: 15px;
     border: none;
-    padding: 15px 25px;
+    cursor: pointer;
+    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -133,23 +142,13 @@ h2 {
     border-radius:1em;
 }
 
-.daysleft {
-    background: #1E3A5F;
-    border-radius: 20px;
-    color: #A9D1E8;
-    padding: 10px ;
+form button:hover{
+    background-color: #2E2B41;
 }
 
-/* for survey */
-.question {
-    background: #94B7CD;
-    font-size: 25px;
-    display: inline-block;
-    padding: 10px;
-    flex-direction: row;
-    margin: 10px 10px 10px 10px;
-    padding: 15px;
-    border-radius:15px;
-    width: 75%;
-    vertical-align: top;    
+@media(max-width: 1100px){
+    .wrapper{
+        width: min(600px, 100%);
+        border-radius:0;
+    }
 }

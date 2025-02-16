@@ -62,20 +62,20 @@ function updateValues() {
     
     let meal_swipe_count = parseInt(document.getElementById("mealswipes").value)
 	localStorage.setItem("meal_swipe_count", meal_swipe_count);
-	window.location.href = "dashboard.html"
+	window.location.href = "dashboard-final.html"
 
 
     let plus_swipe_count = parseInt(document.getElementById("plusswipes").value)
 	localStorage.setItem("plus_swipe_count", plus_swipe_count);
-	window.location.href = "dashboard.html"
+	window.location.href = "dashboard-final.html"
 
 
     let daily_meals_count = parseInt(document.getElementById("dailymeals").value)
     localStorage.setItem("daily_meals_count", daily_meals_count);
-	window.location.href = "dashboard.html"
+	window.location.href = "dashboard-final.html"
 
 
-    window.location.href = "dashboard.html";
+    window.location.href = "dashboard-final.html";
 }
 
 /* OUR INITIAL FUNCTIONS FOR BUTTONS
