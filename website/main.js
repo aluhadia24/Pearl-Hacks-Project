@@ -1,50 +1,78 @@
+console.log("Loaded main.js")
+window.onload = function (){
+	console.log("Page loaded!")
+	let meal_swipe = localStorage.getItem("meal_swipe_count")
+	let plus_count= localStorage.getItem("plus_swipe_count")
+	let daily_meals = localStorage.getItem("daily_meals_count")
+	let days = meal_swipe / daily_meals
 
-two_hundred.onclick = function(){
-	two_hundred.style.backgroundColor = "#21cfe7"; 
-	var meal_plan = 200
+	if(meal_swipe != null){ 
+		console.log("we're in the IF part")
+		document.getElementById("remainmeals").innerText = meal_swipe + " meal swipes"
+	} else {
+		console.log("we're in the ELSE part")
+		document.getElementById("remainmeals").innerText = "please set meal swipe amount"
+	}
+	if(plus_count != null){
+		document.getElementById("remainplus").innerText = plus_count + " plus swipes"
+		}
+	else { 
+		document.getElementById("remainplus").innerText = "please set plus swipe amount"
+	}
+	if(daily_meals != null){ 
+		document.getElementById("daysleft").innerText = "You can eat " + daily_meals + " meals for " + days + " days"
+
+	} else {
+		document.getElementById("daysleft").innerText = "please set daily meal amt"
+	}
+
+
 }
-var one_sixty = document.getElementById("160")
-one_sixty.onclick = function(){ 
-	one_sixty.style.backgroundColor = "#21cfe7"; 
-	var meal_plan = 160
+
+function updateValues() {
+	console.log("started updateValues")
+	let meal_swipe_count = document.getElementById("mealswipes").value
+	console.log(meal_swipe_count)
+	localStorage.setItem("meal_swipe_count",meal_swipe_count ) // this saves it "in memory"
+	window.location.href = "dashboard.html"
+
+	let plus_swipe_count = document.getElementById("plusswipes").value
+	localStorage.setItem("plus_swipe_count", plus_swipe_count) 
+	window.location.href = "dashboard.html"
+
+	let daily_meals_count = document.getElementById("dailymeals").value
+	console.log(daily_meals_count)
+	localStorage.setItem("daily_meals_count", daily_meals_count)
+	window.location.href = "dashboard.html"
 }
-var one_twenty = document.getElementById("120")
-one_twenty.onclick = function(){ 
-	one_twenty.style.backgroundColor = "#21cfe7"; 
-	var meal_plan = 120
-}
-var one_hundred = document.getElementById("100")
-one_hundred.onclick = function(){ 
-	one_hundred.style.backgroundColor = "#21cfe7"; 
-	var meal_plan = 100
-	//test
-}
+
 
 //log meal buttons:
 
-/*var user_meal_swipes = document.getElementById("mealswipes").value
-var user_plus_swipes = document.getElementById("plusswipes").value
 
-var normal_button = document.getElementById("mealswipe_button")
-normal_button.onclick = function(){ 
-	user_meal_swipes --; 
+
+var meal_button = document.getElementById("mealswipe_button")
+meal_button.onclick = function(){ 
+	meal_swipe --; 
 }
 
 var plus_swipes_button = document.getElementById("plus_button")
 plus_swipes_button.onclick = function(){
-	user_plus_swipes --; 
+	if (plus_count > 0){
+		 
+	plus_count --; 
+	meal_swipe --; 
+	}
 }
 
-document.getElementById("remainmeals").innerText = user_meal_swipes + "meal swipes left"; */
+// document.getElementById("mealswipe_button").addEventListener("click", me); 
+// document.getElementById("plus_button").addEventListener("click", increaseComments); */
 
-let meal_swipe_count = document.getElementById("mealswipes")
-let plus_swipe_count = document.getElementById("plusswipes")
 
-function displayMS() {
-	document.getElementById("remainmeals").innerText = meal_swipe_count + "swipes left"
-}
 
-displayMS()
+
+
+//displayMS()
 
 /*function decreaseMealCount(){
     likes += 1; 
