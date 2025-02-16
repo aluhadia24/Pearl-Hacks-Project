@@ -1,0 +1,154 @@
+
+html{
+    font-family: pixelated;
+    font-size: 12pt;
+    color: #2E2B41;
+    text-align: center;
+}
+
+.wrapper{
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+box-sizing: border-box;
+background-color: #7BAFD4;
+height: 100vh;
+width: max(40%, 600px);
+padding: 10px;
+border-radius: 0 20px 20px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+@font-face {
+    font-family: pixelated;
+    src: url(PixelifySans-VariableFont_wght.ttf)
+}
+
+body {
+    min-height:100vh;
+    background-image: url(background.png);
+    background-color: #7BAFD4;
+    background-size: cover;
+    background-position: right;
+    font-family: pixelated;
+    overflow: hidden;
+    }
+
+header {
+    background-color: #1E3A5F;
+    color: #A9D1E8;
+    text-align: left;
+    margin-top: 15px;
+    font-family:pixelated;
+    font-size: 25px;
+    padding: 5px;
+}
+
+section {
+    background-color: #A9D1E8;
+    color: #1E3A5F;
+    text-align: center;
+    margin-top: 15px;
+    font-family:pixelated;
+    font-size: 25px;
+    padding: 5px;
+}
+
+form{
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+form > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form label{
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: #4A769E;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+
+
+form input{
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background-color:#A9D1E8
+}
+
+form input:focus{
+    outline: none;
+    border-color: #2E2B41;
+}
+
+form input::placeholder{
+    color: #2E2B41;
+    opacity: 1;
+}
+
+h1 {
+    color: #1E3A5F;
+    text-align: left;
+    margin-top: 15px;
+    font-weight: 900px;
+    font-family: pixelated;
+    font-size: 40px;
+}
+
+h2 {
+    color: #A9D1E8;
+    text-align: center;
+    margin-top: 15px;
+    font-family:pixelated;
+    font-size: 25px;
+}
+
+
+button {
+    background-color: #4A769E;
+    color: #FFFF;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px;
+    border: none;
+    cursor: pointer;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family:pixelated;
+    border-radius:1em;
+}
+
+form button:hover{
+    background-color: #2E2B41;
+}
+
+@media(max-width: 1100px){
+    .wrapper{
+        width: min(600px, 100%);
+        border-radius:0;
+    }
+}
