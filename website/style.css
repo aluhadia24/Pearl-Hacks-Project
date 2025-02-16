@@ -13,20 +13,20 @@ body {
     background-size: 100%;
     background-color: #F8F9F9;
     color: white;
-    font-family:pixelated;
+    font-family: pixelated;
     padding: 0;
     margin: 0;
     text-align: center;
-    }
+}
 
 header {
     background: #1E3A5F;
-    color:#F8F9F9;
+    color: #F8F9F9;
     text-align: left;
     display: block;
     font-size: 30px;
     padding: 15px;
-    font-family:pixelated;
+    font-family: pixelated;
 }
 
 .subheader {
@@ -52,37 +52,37 @@ header {
 footer {
     background: #1E3A5F;
     text-align: center;
-    color:#F8F9F9;
-    font-family:pixelated;
+    color: #F8F9F9;
+    font-family: pixelated;
     vertical-align: center;
-    padding: 0;
+    padding: 30px 0;
     height: 50px;
 }
-    
+
 label {
     font-size: 18px;
     padding: 15px 32px;
-    border-radius:1em;
+    border-radius: 1em;
 }
 
 h1 {
     color: #F8F9F9;
     text-align: center;
     margin-top: 15px;
-    font-family:pixelated;
+    font-family: pixelated;
     display: inline-block;
     font-size: 25px;
-    border-radius:1em;
+    border-radius: 1em;
 }
 
 h2 {
-    color: #A9D1E8;
+    color: #1E3A5F;
     text-align: center;
     margin-top: 5px;
-    font-family:pixelated;
+    font-family: pixelated;
     display: inline-block;
     font-size: 18px;
-    border-radius:1em;
+    border-radius: 1em;
 }
 
 /* For dashboard */
@@ -95,9 +95,9 @@ h2 {
     background: #A9D1E8;
     border-radius: 20px;
     color: #1E3A5F;
-    padding: 10px ;
+    padding: 10px;
     font-size: 25px;
-    
+
 }
 
 .horizrow {
@@ -106,9 +106,9 @@ h2 {
     flex-direction: row;
     margin: 10px 10px 10px 10px;
     padding: 5px;
-    border-radius:1em;
+    border-radius: 1em;
     width: 25%;
-    vertical-align: top;    
+    vertical-align: top;
 }
 
 .vertrow {
@@ -129,15 +129,31 @@ h2 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family:pixelated;
-    border-radius:1em;
+    font-family: pixelated;
+    border-radius: 1em;
 }
 
 .daysleft {
     background: #1E3A5F;
     border-radius: 20px;
     color: #A9D1E8;
-    padding: 10px ;
+    padding: 10px;
+}
+
+/* for landing page */
+
+.hungryimg {
+    size: 50%
+}
+
+.hero1 {
+    font-size: 80px;
+    color:#F8F9F9;
+}
+
+.hero2 {
+    font-size:40px;
+    color:#1E3A5F;
 }
 
 /* for survey */
@@ -149,7 +165,24 @@ h2 {
     flex-direction: row;
     margin: 10px 10px 10px 10px;
     padding: 15px;
-    border-radius:15px;
+    border-radius: 15px;
     width: 75%;
-    vertical-align: top;    
+    vertical-align: top;
+}
+
+/*for header */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logoimg {
+    float: left;
+}
+
+.logoheader {
+    float:left;
 }

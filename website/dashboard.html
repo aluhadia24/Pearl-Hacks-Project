@@ -1,72 +1,86 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Heel Meals - Dashboard</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="main.js" defer></script>
-    </head>
-    
-        <header>
-            Heel Meals
-        </header>
-        <body>
-        <div class="subheader">Hi {{name}}!</div>
-        <div class="subheader"><h2>Today is {{date}}</h2></div>
-        
-        
-        
-            <div class = "horizrow">
-                <div class ="meallog">
-                <div class = "vertrow">
-                    <div class="subheader">Log Meal</div>
-                </div>
-                <div class = "vertrow">
-                    <div class ="dashbutton">Meal Swipe</div>
-                </div>
-                <div class = "vertrow">
-                    <div class ="dashbutton">Plus Swipe</div>   
-                </div>
-            </div>
-            </div>
 
-            <div class = "horizrow">
-                <div class = "vertrow">
-                    <div class = "subheader">
-                    X Meals Swipes
-                    </div>
-                </div>
-                <div class = "vertrow">
-                    <div class = "remainmeals">
-                    X Meals Swipes
-                    </div>
-                </div>
-                <div class = "vertrow">
-                    <div class = "remainmeals">
-                        X Plus Swipes
-                    </div>
-                </div>
-                <div class = "vertrow">
-                    <div class = "remainmeals">
-                        $X Flex
-                    </div>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Heel Meals - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<header>
+    <div class="container">
+        <div class = "logoimg">
+            <img src="logo.png" width="75" height="75">
+        </div>
+        <div class = "logoheader">
+            Heel Meals
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="subheader">Hi {{name}}!</div>
+    <div class="subheader">
+        <h2>Today is {{date}}</h2>
+    </div>
+
+
+
+    <div class="horizrow">
+        <div class="meallog">
+            <div class="vertrow">
+                <div class="subheader">Log Meal</div>
             </div>
-            
-            <div class = "horizrow">
-                <div class = "vertrow">
-                    <div class = "daysleft"><h1>You can eat X meals per day</h1></div>
-                </div>
-                <div class = "vertrow">
-                    <!--<img src=""> -->
-                </div>
+            <div class="vertrow">
+                <div class="dashbutton">Meal Swipe</div>
             </div>
-        
-        
-        
-            <footer>
-                made with love at pearl hacks!
-            </footer>
-    </body>
+            <div class="vertrow">
+                <div class="dashbutton">Plus Swipe</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="horizrow">
+        <div class="vertrow">
+            <div class="subheader">
+                X Meals Swipes
+            </div>
+        </div>
+        <div class="vertrow">
+            <div class="remainmeals">
+                X Meals Swipes
+            </div>
+        </div>
+        <div class="vertrow">
+            <div class="remainmeals">
+                X Plus Swipes
+            </div>
+        </div>
+        <div class="vertrow">
+            <div class="remainmeals">
+                $X Flex
+            </div>
+        </div>
+    </div>
+
+    <div class="horizrow">
+        <div class="vertrow">
+            <div class="daysleft">
+                <h1>You can eat X meals per day</h1>
+            </div>
+        </div>
+        <div class="vertrow">
+            <img src="millie_dash.png" width="350" height="350">
+        </div>
+    </div>
+
+
+
+    <footer>
+        made by anna, ashna, eva, and sindhu with love at pearl hacks!
+    </footer>
+</body>
+
 </html>
