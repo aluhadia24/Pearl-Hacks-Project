@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Heel Meals - Dashboard</title>
     <link rel="stylesheet" href="styles-final.css">
-    <script src="main.js" defer></script>
+    <script src="main-final.js" defer></script>
 </head>
 
 <div class = "annaheader">
@@ -21,10 +21,7 @@
 </div>
 
 <body>
-    <div class="subheader">Hi {{name}}!</div>
-    <div class="subheader">
-        <div class = "annah2">Today is {{date}}</div>
-    </div>
+    <div class="subheader">Hi Tar Heel!</div>
 
 
 
@@ -34,10 +31,10 @@
                 <div class="subheader">Log Meal</div>
             </div>
             <div class="vertrow">
-                <div class="dashbutton">Meal Swipe</div>
+                <div class="dashbutton" id = "mealswipe_button">Meal Swipe</div>
             </div>
             <div class="vertrow">
-                <div class="dashbutton">Plus Swipe</div>
+                <div class="dashbutton" id = "plus_button">Plus Swipe</div>
             </div>
         </div>
     </div>
@@ -45,30 +42,25 @@
     <div class="horizrow">
         <div class="vertrow">
             <div class="subheader">
+                Meals Swipes
+            </div>
+        </div>
+        <div class="vertrow">
+            <div class="remainmeals" id = "remainmeals">
                 X Meals Swipes
             </div>
         </div>
         <div class="vertrow">
-            <div class="remainmeals">
-                X Meals Swipes
-            </div>
-        </div>
-        <div class="vertrow">
-            <div class="remainmeals">
+            <div class="remainmeals" id = "remainplus">
                 X Plus Swipes
-            </div>
-        </div>
-        <div class="vertrow">
-            <div class="remainmeals">
-                $X Flex
             </div>
         </div>
     </div>
 
     <div class="horizrow">
         <div class="vertrow">
-            <div class="daysleft">
-                <div class = "annah1">You can eat X meals per day</div>
+            <div class="daysleft" id="daysleft">
+                You can eat X meals per day
             </div>
         </div>
         <div class="vertrow">

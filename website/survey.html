@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width">
     <title>Heel Meals - Survey</title>
     <link rel="stylesheet" href="styles-final.css">
-    <script src="main.js" defer></script>
+    <script src="main-final.js" defer></script>
 </head>
 
 <header>
     <div class="container">
-        <div class = "logoimg">
+        <div class="logoimg">
             <img src="logo.png" width="75" height="75">
         </div>
-        <div class = "logoheader">
+        <div class="logoheader">
             Heel Meals
         </div>
     </div>
@@ -23,27 +23,25 @@
 
 <body>
     <div class="question">
-        <div class = "annah1">How many meals do you have left?</div>
+        <div class="annah1">How many meals do you have left?</div>
         <div class="annaul">
-            <div class = "surveyquestions">Meal Swipes:</div><br>
+            <div class="surveyquestions">Meal Swipes:</div><br>
             <input type="number" id="mealswipes" name="mealswipes"><br>
-            <div class = "surveyquestions">Plus Swipes:</div><br>
+            <div class="surveyquestions">Plus Swipes:</div><br>
             <input type="number" id="plusswipes" name="plusswipes"><br>
         </div>
     </div>
     <br>
 
     <div class="question">
-        <div class = "annah1">How many meals do you eat a day?</div>
-        <div class = "annaul">
-            <input type="number">
+        <div class="annah1">How many meals do you eat a day?</div>
+        <div class="annaul">
+            <input type="number" id="dailymeals" name="dailymeals">
         </div>
     </div>
 
     <br>
-    <a href="dashboard.html">
-        <div class="dashbutton">Next!</div>
-    </a>
+    <button onclick="updateValues()"><div class="dashbutton">Next!</div></button>
     <br>
 
 
