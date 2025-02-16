@@ -1,4 +1,6 @@
 <!DOCTYPE HTML>
+<script src="main.js"></script>
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -23,10 +25,10 @@
                     <div class="subheader">Log Meal</div>
                 </div>
                 <div class = "vertrow">
-                    <div class ="dashbutton">Meal Swipe</div>
+                    <div class ="dashbutton" id = "mealswipe_button">Meal Swipe</div>
                 </div>
                 <div class = "vertrow">
-                    <div class ="dashbutton">Plus Swipe</div>   
+                    <div class ="dashbutton" id = "plus_button">Plus Swipe</div>   
                 </div>
             </div>
             </div>
@@ -38,14 +40,14 @@
                     </div>
                 </div>
                 <div class = "vertrow">
-                    <div class = "remainmeals">
+                    <p class = "remainmeals" id = "remainmeals">
                     X Meals Swipes
-                    </div>
+                    </p>
                 </div>
                 <div class = "vertrow">
-                    <div class = "remainmeals">
+                    <p class = "remainmeals" id = "remainplus">
                         X Plus Swipes
-                    </div>
+                    </p>
                 </div>
                 <div class = "vertrow">
                     <div class = "remainmeals">
@@ -63,7 +65,7 @@
                 </div>
             </div>
         
-        
+            <button onclick="displayMS()">Calculate!</button>
         
             <footer>
                 made with love at pearl hacks!
