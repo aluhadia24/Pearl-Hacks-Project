@@ -20,4 +20,8 @@ one_hundred.onclick = function(){
 	//test
 }
 
+var mealSwipes = document.getElementById("mealswipes");
+document.getElementById("dispMeal").innerText = mealSwipes
+
+
 
