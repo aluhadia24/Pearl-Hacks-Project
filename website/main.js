@@ -28,7 +28,7 @@ window.onload = function (){
 		document.getElementById("remainplus").innerText = "please set plus swipe amount"
 	}
 	if(daily_meals != null){ 
-		document.getElementById("daysleft").innerText = "You can eat " + daily_meals + " meals for " + days + " days"
+		document.getElementById("daysleft").innerText = "You can eat " + daily_meals + " meals for " + Math.floor(days) + " days"
 
 	} else {
 		document.getElementById("daysleft").innerText = "please set daily meal amt"
@@ -109,5 +109,14 @@ document.getElementById("plus_button").addEventListener("click", function () {
         plus_count--;
         localStorage.setItem("plus_swipe_count", plus_count);
         document.getElementById("remainplus").innerText = plus_count + " plus swipes";
+		
+	let meal_swipe = parseInt(localStorage.getItem("meal_swipe_count")) || 0;
+	if (meal_swipe > 0) {
+		meal_swipe--;
+		localStorage.setItem("meal_swipe_count", meal_swipe);
+		document.getElementById("remainmeals").innerText = meal_swipe + " meal swipes";
+			}
+	};
+	
     }
-});
+);
